@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <table id="header">
+        <tr>
+            <td id="header_name">File Explorer</td>
+            <form Method="Post" Action="/home" id="form_submit">
+                <td id="col_pathbox">
+                    <input type="text" id="pathbox" value={{.PathValue}} name="pathboxvalue">
+                </td>
+                <td id="col_submitbutton">
+                    <button type="submit" id="btn_submit">Show</button>
+                </td>
+            </form>
+            <td id="col_gridview">
+                <button type="submit" id="btn_gridview" onmouseover="hideaddoptions()">Grid</button>
+            </td>
+            <td id="col_listview">
+                <button type="submit" id="btn_listview" onmouseover="hideaddoptions()">List</button>
+            </td>
+            <td id="col_addfile">
+                <button type="submit" id="btn_addfile" onmouseover="showaddoptions()">Add</button>
+            </td>
+            <td id="col_rename">
+                <button type="submit" id="btn_rename" onmouseover="hideaddoptions()">Rename</button>
+            </td>
+            <td id="col_delete">
+                <button type="submit" id="btn_delete" onmouseover="hideaddoptions()">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <table id="header2" onmouseleave="hideaddoptions()">
+        <tr>
+            <td id="col_fill_header2"></td>
+            <form Method="Post" Action="/addfile" id="form_add_file">
+                <td id="col_addfile2">
+                    <button type="submit" id="btn_addfile2">Add File</button>
+                </td>
+            </form>
+            <form Method="Post" Action="/addfolder" id="form_add_folder">
+                <td id="col_addfolder">
+                    <button type="submit" id="btn_addfolder">Add Folder</button>
+                </td>
+            </form>
+            <td id="col_fill_tail"></td>
+        </tr>
+    </table>
+    <table id="body_header">
+        <tr>
+        </tr>
+    </table>
+    <table id="body_body">
+        {{range .Name}}
+        <tr>
+            <td id="body_row">
+                <link href=#>{{.}}</link>
+            </td>
+        </tr>
+        {{else}}
+        <td id="error_label">
+            <lable>{{.PathValue}}: no such file or directory</label>
+        </td>
+        {{end}}
+        </lable>
+        <table id="body_body2">
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+        <table id="footer">
+            <tr>
+                <td id="location">Charlotte, NC, USA</td>
+                <td id="phone">Ph: 1234567890</td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+        function showaddoptions() {
+            var x = document.getElementById("header2");
+            x.style.display = 'table';
+        }
+
+        function hideaddoptions() {
+            var x = document.getElementById("header2");
+            x.style.display = 'none';
+        }
+
+        window.onscroll = function() {
+            hideaddoptions();
+        };
+        </script>
+</body>
+
+</html>

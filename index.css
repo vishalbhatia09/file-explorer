@@ -1,0 +1,209 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    /*background-color: grey;*/
+}
+
+#header {
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#header_name {
+    /*  background-color: #EDBB99;*/
+    /*height: 100%;*/
+    width: 10%;
+    text-align: center;
+}
+
+#col_pathbox {
+    width: 50%;
+    /*height:100;*/
+}
+
+#pathbox {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    border: 2px solid #515AE3;
+}
+
+#col_gridview {
+    width: 7%;
+}
+
+#btn_gridview {
+    background-color: #EDBB99;
+    height: 100%;
+    width: 100%;
+}
+
+#col_submitbutton {
+    width: 7%;
+    height: 100%;
+    /*width: 12%;*/
+    /* margin:20px 20px 20px 20px;*/
+}
+
+#form_submit {
+    /*background-color: yellow;*/
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#btn_submit {
+    background-color: #515AE3;
+    height: 100%;
+    width: 100%;
+}
+
+#col_listview {
+    width: 7%;
+}
+
+#btn_listview {
+    background-color: #EDBB99;
+    height: 100%;
+    width: 100%;
+}
+
+#body_header {
+    height: 10%;
+    width: 100%;
+}
+
+#col_checkbox {
+    width: 55%;
+    /*border:1px solid;*/
+    /*background-color: grey;*/
+}
+
+#col_addfile {
+    width: 7%;
+    /*border:1px solid;*/
+    /*background-color: blue;*/
+}
+
+#btn_addfile {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #EDBB99;
+}
+
+
+#col_rename {
+    width: 7%;
+    /*background-color: yellow;*/
+}
+
+#btn_rename {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #EDBB99;
+}
+
+#col_delete {
+    width: 7%;
+    /*border:1px solid;*/
+    /*background-color: orange;*/
+}
+
+#btn_delete {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #EDBB99;
+}
+
+#header2 {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    /* background-color: yellow;*/
+    /*text-align: center;*/
+}
+
+#col_fill_header2 {
+    height: 100%;
+    width: 75%;
+}
+
+#col_addfile2 {
+    height: 100%;
+    width: 10%;
+}
+
+#btn_addfile2 {
+    height: 100%;
+    width: 100%;
+    background-color: #EDBB99;
+}
+
+#col_addfolder {
+    height: 100%;
+    width: 10%;
+}
+
+#btn_addfolder {
+    height: 100%;
+    width: 100%;
+    background-color: #EDBB99;
+}
+
+#col_fill_tail {
+    height: 100%;
+    width: 5%;
+}
+
+#body_body {
+    height: 20%;
+    width: 100%;
+}
+
+
+#body_body tr:hover {
+    background-color: #E5EAEC;
+}
+
+#error_label {
+    text-align: center;
+}
+
+#body_row {
+    border-bottom: 1px solid #dddddd;
+    border-left: none;
+    height: 18px;
+    padding: 12px;
+}
+
+#body_body2 {
+    height: 50%;
+}
+
+#footer {
+    height: 20%;
+    width: 100%;
+    background-color: #EDBB99;
+}
+
+#location {
+    text-align: center;
+}
+
+#phone {
+    text-align: center;
+}
+
+.selected {
+    background-color: brown;
+    color: #FFF;
+}
